@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp3.LoginForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="LoginForm" Height="450" Width="800"
+        Background="LightBlue">
+    <Grid>
+        <TextBox x:Name="loginField" HorizontalAlignment="Left" Margin="230,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Height="25"/>
+        <TextBox x:Name="passField"  HorizontalAlignment="Left" Margin="230,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Height="28"/>
+        <Button x:Name="buttonLogin" Content="start" HorizontalAlignment="Left" Height="70" Margin="315,249,0,0" VerticalAlignment="Top" Width="135" Click="buttonLogin_Click"/>
+        <TextBlock x:Name="login" HorizontalAlignment="Left" Height="25" Margin="90,134,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="140"/>
+        <TextBlock x:Name="Pass" HorizontalAlignment="Left" Height="25" Margin="90,192,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="140"/>
+        <Button Content="reg account ?" HorizontalAlignment="Left" Height="20" Margin="10,389,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click" RenderTransformOrigin="0.412,-0.248"/>
+
+    </Grid>
+</Window>

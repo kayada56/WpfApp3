@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp3.RegisterForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="RegisterForm" Height="450" Width="800"
+        Background="LightBlue">
+    <Grid x:Name="regbutton">
+        <TextBox x:Name="userNameField" TextWrapping="Wrap" Margin="320,184,200,195"/>
+        <TextBox x:Name="userPassField" TextWrapping="Wrap" Margin="320,256,200,120"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="245,184,0,0" TextWrapping="Wrap" Text="user name" VerticalAlignment="Top" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="245,256,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="320,94,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" Width="280"/>
+        <Button Content="Register" HorizontalAlignment="Left" Height="70" Margin="385,319,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        <Button Content="have account ?" HorizontalAlignment="Left" Height="20" Margin="10,389,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
