@@ -8,13 +8,12 @@
         Title="RegisterForm" Height="450" Width="800"
         Background="LightBlue">
     <Grid x:Name="regbutton">
+        <PasswordBox x:Name="userPassField" Margin="320,256,200,120"/>
         <TextBox x:Name="userNameField" TextWrapping="Wrap" Margin="320,184,200,195"/>
-        <TextBox x:Name="userPassField" TextWrapping="Wrap" Margin="320,256,200,120"/>
         <TextBlock HorizontalAlignment="Left" Height="33" Margin="245,184,0,0" TextWrapping="Wrap" Text="user name" VerticalAlignment="Top" Width="70"/>
         <TextBlock HorizontalAlignment="Left" Height="33" Margin="245,256,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="70"/>
         <TextBlock HorizontalAlignment="Left" Height="30" Margin="320,94,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" Width="280"/>
         <Button Content="Register" HorizontalAlignment="Left" Height="70" Margin="385,319,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
         <Button Content="have account ?" HorizontalAlignment="Left" Height="20" Margin="10,389,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1"/>
-
     </Grid>
 </Window>

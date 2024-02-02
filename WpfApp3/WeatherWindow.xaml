@@ -8,9 +8,18 @@
         Title="WeatherWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="back_to_profile" Content="back to profile" HorizontalAlignment="Left" Height="25" Margin="35,374,0,0" VerticalAlignment="Top" Width="115" Click="back_to_profile_Click"/>
-        <Button x:Name="GetWeatherButton" Content="GetWeatherButton" HorizontalAlignment="Left" Height="57" Margin="370,217,0,0" VerticalAlignment="Top" Width="160" Click="GetWeatherButton_Click"/>
+        <Button x:Name="GetWeatherButton" Content="GetWeatherButton" HorizontalAlignment="Left" Height="57" Margin="610,341,0,0" VerticalAlignment="Top" Width="160" Click="GetWeatherButton_Click"/>
         <TextBox x:Name="cityTextBox" HorizontalAlignment="Left" Height="30" Margin="120,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
-        <TextBlock x:Name="weatherResultText" HorizontalAlignment="Center" Height="114" Margin="0,10,0,0" TextWrapping="Wrap" Text="weatherResultText" VerticalAlignment="Top" Width="340"/>
+        <TextBlock x:Name="weatherResultText" HorizontalAlignment="Center" Height="109" Margin="0,10,0,0" TextWrapping="Wrap" Text="weatherResultText" VerticalAlignment="Top" Width="280"/>
+        <ComboBox x:Name="popularCitiesComboBox" Margin="120,179,465,209">
+            <ComboBoxItem Content="Tokyo"/>
+            <ComboBoxItem Content="Kiev"/>
+            <ComboBoxItem Content="Warsaw"/>
+            <ComboBoxItem Content="Frankfurt"/>
+            <ComboBoxItem Content="Berlin"/>
+            <ComboBoxItem Content="Paris"/>
+            
+        </ComboBox>
 
     </Grid>
 </Window>

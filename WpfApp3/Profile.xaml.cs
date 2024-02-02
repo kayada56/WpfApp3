@@ -14,15 +14,15 @@ using System.Windows.Shapes;
 
 namespace WpfApp3
 {
-    /// <summary>
-    /// Логика взаимодействия для Profile.xaml
-    /// </summary>
     public partial class Profile : Window
     {
         public Profile()
         {
             InitializeComponent();
+            DataContext = this; // Устанавливаем текущий объект как источник данных
         }
+
+        public string CurrentUsername => LoginForm.CurrentUsername;
 
         private void store_button_Click(object sender, RoutedEventArgs e)
         {

@@ -20,10 +20,10 @@ namespace WpfApp3
         public WeatherWindow()
         {
             InitializeComponent();
+
+            // Добавить обработчик события для изменения выбранного города в ComboBox
+            popularCitiesComboBox.SelectionChanged += popularCitiesComboBox_SelectionChanged;
         }
-
-
-
 
         private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
         {
@@ -58,7 +58,7 @@ namespace WpfApp3
 
         private void UpdateWeatherUI(string weatherJson)
         {
-            dynamic weatherData = Newtonsoft.Json.JsonConvert.DeserializeObject(weatherJson);
+            dynamic weatherData = JsonConvert.DeserializeObject(weatherJson);
 
             // Вывести полученный JSON в консоль (для отладки)
             Console.WriteLine(weatherJson);
@@ -85,11 +85,25 @@ namespace WpfApp3
             }
         }
 
+        private void popularCitiesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (popularCitiesComboBox.SelectedItem != null)
+            {
+                ComboBoxItem selectedItem = (ComboBoxItem)popularCitiesComboBox.SelectedItem;
+                cityTextBox.Text = selectedItem.Content.ToString();
+            }
+        }
+
         private void back_to_profile_Click(object sender, RoutedEventArgs e)
         {
             Profile profile = new Profile();
             profile.Show();
             this.Close();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -53,6 +53,9 @@ namespace WpfApp3
             }
         }
 
+        public static string CurrentUsername { get; private set; }
+
+
         private void buttonLogin_Click(object sender, RoutedEventArgs e)
         {
             String loginUser = loginField.Text;
@@ -75,7 +78,9 @@ namespace WpfApp3
 
             if (table.Rows.Count > 0)
             {
+                CurrentUsername = loginUser;
                 MessageBox.Show("Успешный вход");
+
                 Profile profWindow = new Profile();
                 profWindow.Show();
                 this.Close();

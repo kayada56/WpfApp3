@@ -57,7 +57,7 @@ namespace WpfApp3
                 return;
             }
 
-            if (userPassField.Text == "")
+            if (userPassField.Password == "")
             {
                 MessageBox.Show("Введите пароль");
                 return;
@@ -68,7 +68,7 @@ namespace WpfApp3
                 return;
             }
 
-            string hashedPassword = PasswordHasher.HashPassword(userPassField.Text);
+            string hashedPassword = PasswordHasher.HashPassword(userPassField.Password);
             string hashedLogin = LoginHasher.HashLogin(userNameField.Text);
 
             DB db = new DB();
